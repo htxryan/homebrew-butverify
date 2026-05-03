@@ -5,21 +5,21 @@
 class Bv < Formula
   desc "butverify.dev agent CLI — publish AI-generated work for human review."
   homepage "https://butverify.dev"
-  version "0.1.4"
+  version "0.1.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/htxryan/butverify/releases/download/v0.1.4/bv_0.1.4_darwin_amd64.tar.gz"
-      sha256 "6b0928c98348dab6c696e27fdadb4899d4a5205386bed9f8f52d005297f67a86"
+      url "https://github.com/htxryan/butverify/releases/download/v0.1.5/bv_0.1.5_darwin_amd64.tar.gz"
+      sha256 "0d14f7c391e9c2e8d87047fdf2f3d88f57218c82feb5e69288daa16001bcf68b"
 
       define_method(:install) do
         bin.install "bv"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/htxryan/butverify/releases/download/v0.1.4/bv_0.1.4_darwin_arm64.tar.gz"
-      sha256 "b22e8e2b4da340e3484996a0561bab225ff26914bd36a3757cd01fbba1789987"
+      url "https://github.com/htxryan/butverify/releases/download/v0.1.5/bv_0.1.5_darwin_arm64.tar.gz"
+      sha256 "b31257444df660d8fa5c701958d8013d4df4863b012f5b9ba8a1a5ae270b525e"
 
       define_method(:install) do
         bin.install "bv"
@@ -29,15 +29,15 @@ class Bv < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/htxryan/butverify/releases/download/v0.1.4/bv_0.1.4_linux_amd64.tar.gz"
-      sha256 "cf23cc13406b1e6b9bbfb0baafdf219d7e2d0044e298a6b05ad566bbd310af7c"
+      url "https://github.com/htxryan/butverify/releases/download/v0.1.5/bv_0.1.5_linux_amd64.tar.gz"
+      sha256 "827730807433abbf9f8399208d0e1e8b9cd96943cb6e589d94a9ee23a6411905"
       define_method(:install) do
         bin.install "bv"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/htxryan/butverify/releases/download/v0.1.4/bv_0.1.4_linux_arm64.tar.gz"
-      sha256 "daf961758e4d71b02101c94ae131887274abece528af225e31f72b79d0ecc01a"
+      url "https://github.com/htxryan/butverify/releases/download/v0.1.5/bv_0.1.5_linux_arm64.tar.gz"
+      sha256 "f58712cf96ec4e41cd819481ecedff8ba12b4d20a8e32a176e19f8d49001e998"
       define_method(:install) do
         bin.install "bv"
       end
